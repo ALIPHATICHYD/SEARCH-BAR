@@ -7,5 +7,9 @@ filterInput.addEventListener('keyup', filterNames);
 function filterNames(){
     // Getting value of input
     let filterValue = document.getElementById('input').value.toUpperCase();
+    
     // Getting names ul
     let ul = document.getElementById('names');
+    
+   // Getting lis from ul
+    let li = ul.querySelectorAll('li.collection-item');
